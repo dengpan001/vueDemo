@@ -25,7 +25,7 @@ export default {
   name: 'HelloWorld',
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App,我是金卡智能集团11！'
+      msg: 'Welcome to Your Vue.js App,我是金卡智能集团aaa！'
     }
   }
 }
