@@ -1,11 +1,11 @@
 <template>
-  <happy-scroll resize size="8" :style="{height:'100% '}">
-    <Row :style="{height:'100% ',background: '#fff'}">
+    <Row :style="{height:'calc(100% - 40px) ',background: '#fff'}">
       <Col span="24" :style="{height: '100% '}">
-      <slot></slot>
+      <happy-scroll resize size="8">
+          <slot></slot>
+      </happy-scroll>
       </Col>
     </Row>
-  </happy-scroll>
 </template>
 
 <script>
@@ -16,7 +16,5 @@
 </script>
 
 <style scoped>
-.happy-scroll-container{
-  height:100% !important;
-}
+
 </style>
