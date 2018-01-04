@@ -39,7 +39,7 @@
   }
 </style>
 <template>
-  <div class="layout fullHeight" id="app">
+  <div class="layout fullHeight" id="app" >
     <Layout class="fullHeight">
       <wrapperTopMenu></wrapperTopMenu>
       <Layout class="fullHeight">
@@ -52,7 +52,7 @@
                 设备信息
               </template>
               <router-link to="/meter">
-                  <MenuItem name="1-1">表具型号维护</MenuItem>
+                  <MenuItem name="1-1">表具台帐维护</MenuItem>
               </router-link>
               <router-link to="/parameter">
                     <MenuItem name="1-3">报警参数维护</MenuItem>

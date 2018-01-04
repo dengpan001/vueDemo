@@ -80,44 +80,36 @@
         return {
           columns1: [
             {
-              title: 'Name',
-              key: 'name'
+              title: '表具编号',
+              key: 'meterNo'
             },
             {
-              title: 'Age',
-              key: 'age'
+              title: '表具型号',
+              key: 'mtDes'
             },
             {
-              title: 'Address',
-              key: 'address'
+              title: '通讯时间',
+              key: 'setUpTime'
+            },
+
+            {
+              title: '阀门',
+              key: 'valveStateDes'
             }
+
           ],
-          data1: [
-            {
-              name: 'John Brown',
-              age: 18,
-              address: 'New York No. 1 Lake Park',
-              date: '2016-10-03'
-            },
-            {
-              name: 'Jim Green',
-              age: 24,
-              address: 'London No. 1 Lake Park',
-              date: '2016-10-01'
-            },
-            {
-              name: 'Joe Black',
-              age: 30,
-              address: 'Sydney No. 1 Lake Park',
-              date: '2016-10-02'
-            },
-            {
-              name: 'Jon Snow',
-              age: 26,
-              address: 'Ottawa No. 2 Lake Park',
-              date: '2016-10-04'
-            }
-          ],
+          data1:[
+              {"meterNo":"171221000001","mtDes":"金卡1.0中心计费金额表","setUpTime":1513838584000,"valveStateDes":"关"},
+              {"meterNo":"201712181812","mtDes":"金卡1.0中心计费金额表","setUpTime":1513592018000,"valveStateDes":"关"},
+              {"meterNo":"201712182006","mtDes":"金卡1.0中心计费金额表","setUpTime":1513598971000,"valveStateDes":"关"},
+              {"meterNo":"201712191153","mtDes":"金卡1.0中心计费金额表","setUpTime":1513655736000,"valveStateDes":"关"},
+              {"meterNo":"201712191158","mtDes":"金卡1.0中心计费金额表","setUpTime":1513655934000,"valveStateDes":"关"},
+              {"meterNo":"201712191839","mtDes":"金卡1.0中心计费金额表","setUpTime":1513680043000,"valveStateDes":"关"},
+              {"meterNo":"201712191857","mtDes":"金卡1.0中心计费金额表","setUpTime":1513681088000,"valveStateDes":"关"},
+              {"meterNo":"201712191921","mtDes":"金卡1.0中心计费金额表","setUpTime":1513682533000,"valveStateDes":"关"},
+              {"meterNo":"201712191928","mtDes":"金卡1.0中心计费金额表","setUpTime":1514004857000,"valveStateDes":"关"},
+              {"meterNo":"201712191930","mtDes":"金卡1.0中心计费金额表","setUpTime":1513683064000,"valveStateDes":"关"}
+           ],
           formItem: {
             input: '',
             select: '',
@@ -136,6 +128,7 @@
         Layout,
         panelHeader
       },
+
       name: "meter"
     }
 </script>

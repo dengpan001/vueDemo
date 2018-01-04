@@ -5,6 +5,7 @@ import  table from '@/components/table'
 import  card from '@/components/card'
 import  meter from '@/components/meter'
 import  parameter from '@/components/parameter'
+
 Vue.use(Router)
 
 export default new Router({
