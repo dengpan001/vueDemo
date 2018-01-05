@@ -1,13 +1,28 @@
 <template>
-  <Table :columns="columns10" :data="data9"></Table>
+  <Row class="fullHeight">
+    <Col span="12" :style="{padding:'0 5px',height: '100% '}">
+      <panelHeader></panelHeader>
+      <panelBody>
+         <Table :columns="columns10" :data="data9"></Table>
+      </panelBody>
+    </Col>
+  </Row>
 </template>
 <!--<template>
   <Table border :columns="columns1" :data="data1"></Table>
 </template>-->
 <script>
   import expandRow from './hide.vue';
+  import Layout from "iview/src/components/layout/layout";
+  import panelHeader from '../publicComponents/panelHeader';
+  import panelBody from "../publicComponents/panelBody";
   export default {
-    components: { expandRow },
+    components: {
+      expandRow,
+      panelBody,
+      Layout,
+      panelHeader
+    },
     data () {
       return {
         columns10: [
@@ -23,66 +38,50 @@
             }
           },
           {
-            title: 'Name',
-            key: 'name'
+            title: '表具编号',
+            key: 'id'
           },
           {
-            title: 'Age',
-            key: 'age'
+            title: '表具类型',
+            key: 'type'
           },
           {
-            title: 'Address',
-            key: 'address'
+            title: '表具型号',
+            key: 'tType'
           }
         ],
         data9: [
           {
-            name: 'John Brown',
-            age: 18,
-            address: 'New York No. 1 Lake Park',
-            job: 'Data engineer',
-            interest: 'badminton',
-            birthday: '1991-05-14',
-            book: 'Steve Jobs',
-            movie: 'The Prestige',
-            music: 'I Cry'
+            id: '999910791002',
+            type: '智能表',
+            tType: '金卡物联网NB10型',
+            status: '已拆除',
+            reason:'废弃'
           },
           {
-            name: 'Jim Green',
-            age: 25,
-            address: 'London No. 1 Lake Park',
-            job: 'Data Scientist',
-            interest: 'volleyball',
-            birthday: '1989-03-18',
-            book: 'My Struggle',
-            movie: 'Roman Holiday',
-            music: 'My Heart Will Go On'
+            id: '999910791002',
+            type: '智能表',
+            tType: '金卡物联网NB10型',
+            status: '已拆除',
+            reason:'损坏'
           },
           {
-            name: 'Joe Black',
-            age: 30,
-            address: 'Sydney No. 1 Lake Park',
-            job: 'Data Product Manager',
-            interest: 'tennis',
-            birthday: '1992-01-31',
-            book: 'Win',
-            movie: 'Jobs',
-            music: 'Don’t Cry'
+            id: '999910791002',
+            type: '智能表',
+            tType: '金卡物联网NB10型',
+            status: '已拆除',
+            reason:'废弃'
           },
           {
-            name: 'Jon Snow',
-            age: 26,
-            address: 'Ottawa No. 2 Lake Park',
-            job: 'Data Analyst',
-            interest: 'snooker',
-            birthday: '1988-7-25',
-            book: 'A Dream in Red Mansions',
-            movie: 'A Chinese Ghost Story',
-            music: 'actor'
+            id: '999910791002',
+            type: '智能表',
+            tType: '金卡物联网NB10型',
+            status: '已拆除',
+            reason:'废弃'
           }
         ]
       }
-    }
+    },
   }
 </script>
 <!--
